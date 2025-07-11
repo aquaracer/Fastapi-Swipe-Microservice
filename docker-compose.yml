@@ -1,0 +1,40 @@
+version: '3.9'
+
+services:
+
+  app:
+    container_name: swipe_service
+    build: .
+    ports:
+      - '8002:8002'
+    volumes:
+      - .:/src
+    restart: always
+    env_file:
+      - .env
+    networks:
+      - app-network
+    depends_on:
+      - db
+
+
+  db:
+    image: postgres:16.2
+    restart: always
+    container_name: db_swipes
+    ports:
+      - '5432:5432'
+    env_file:
+      - .env
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true
+
+
+volumes:
+  pgdata:

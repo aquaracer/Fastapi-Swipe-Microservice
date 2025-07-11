@@ -1,5 +1,15 @@
 # 🚀 Swipe Service
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.12-blue?logo=python" />
+  <img src="https://img.shields.io/badge/FastAPI-0.115.12-green?logo=fastapi" />
+  <img src="https://img.shields.io/badge/Docker-ready-blue?logo=docker" />
+  <img src="https://img.shields.io/badge/PostgreSQL-16.2-blue?logo=postgresql" />
+  <img src="https://img.shields.io/badge/Kafka-2.8.0-black?logo=apachekafka" />
+  <img src="https://img.shields.io/badge/Poetry-dependencies-yellow?logo=python" />
+  <img src="https://img.shields.io/badge/Alembic-migrations-orange?logo=alembic" />
+</p>
+
 ## 📋 Описание
 
 Асинхронный микросервис, для обработки свайпов в системе знакомств. Сервис получает
